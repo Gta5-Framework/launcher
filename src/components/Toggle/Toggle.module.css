@@ -1,0 +1,35 @@
+.track {
+  position: relative;
+  width: 56px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: var(--surface-08);
+  transition: background-color 150ms ease;
+  flex-shrink: 0;
+}
+
+.track[data-checked="true"] {
+  background: var(--color-blue-600);
+}
+
+.track:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.knob {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--text-primary);
+  transition: transform 150ms ease;
+}
+
+.track[data-checked="true"] .knob {
+  transform: translateX(26px);
+}

@@ -1,0 +1,25 @@
+.dot {
+  display: inline-block;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.dot[data-tone="blue"] {
+  background: var(--color-blue-400);
+}
+
+.dot[data-tone="green"] {
+  background: var(--color-green-500);
+}
+
+.dot[data-tone="white"] {
+  background: var(--text-primary);
+}
+
+.dot[data-tone="muted"] {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.dot[data-tone="red"] {
+  background: var(--color-red-400);
+}

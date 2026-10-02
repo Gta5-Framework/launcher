@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 23px;
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  color: var(--color-blue-400);
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

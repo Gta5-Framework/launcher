@@ -1,0 +1,210 @@
+.title {
+  font-family: var(--font-family);
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.path {
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}
+
+.statStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 0 28px;
+  border-radius: var(--radius-lg);
+  background: var(--card-glass-bg);
+  border: 1px solid var(--card-glass-border);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+}
+
+.statStripLeft {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.statPrimary {
+  font-family: var(--font-family);
+  font-size: var(--fs-body-medium);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.statSecondary {
+  margin-left: 28px;
+  font-family: var(--font-family);
+  font-size: var(--fs-body-medium);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-60);
+  white-space: nowrap;
+}
+
+.statHint {
+  font-family: var(--font-family);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-regular);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2xl);
+  background: var(--card-glass-bg);
+  border: 1px solid var(--card-glass-border);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  overflow: hidden;
+}
+
+.panelHeader {
+  display: grid;
+  grid-template-columns: 620px 200px 380px 1fr;
+  flex-shrink: 0;
+  padding: 24px 40px 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.columnHeader {
+  font-family: var(--font-family);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-semibold);
+  color: var(--text-muted-50);
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.rowsContainer {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.rowsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 620px 200px 380px 1fr;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.nameCell {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-left: 16px;
+}
+
+.modIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: rgba(37, 99, 235, 0.2);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  font-family: var(--font-family);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-bold);
+  color: var(--color-blue-400);
+}
+
+.modName {
+  font-family: var(--font-family);
+  font-size: var(--fs-title);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.modMeta {
+  font-family: var(--font-family);
+  font-size: var(--fs-body-medium);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-70);
+  white-space: nowrap;
+}
+
+.actionCell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.rowButton {
+  width: 160px;
+  height: 44px;
+}
+
+.rowButtonSmall {
+  width: 104px;
+  height: 44px;
+}
+
+.placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  min-height: 200px;
+  font-family: var(--font-family);
+  font-size: var(--fs-body-medium);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-50);
+  text-align: center;
+}
+
+.dropZone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  margin: 24px 40px;
+  height: 96px;
+  padding: 0 24px;
+  text-align: center;
+  border-radius: var(--radius-lg);
+  background: rgba(37, 99, 235, 0.06);
+  border: 1.5px dashed rgba(96, 165, 250, 0.4);
+  font-family: var(--font-family);
+  font-size: var(--fs-nav);
+  font-weight: var(--fw-medium);
+  color: var(--color-blue-400);
+  cursor: pointer;
+  transition: background-color 120ms ease, border-color 120ms ease;
+}
+
+.dropZone[data-dragging="true"] {
+  background: rgba(37, 99, 235, 0.14);
+  border-color: rgba(96, 165, 250, 0.8);
+}

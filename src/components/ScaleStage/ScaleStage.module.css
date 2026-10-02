@@ -1,0 +1,15 @@
+.viewport {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: var(--bg-app);
+}
+
+.stage {
+  position: relative;
+  flex-shrink: 0;
+  transform-origin: center center;
+}

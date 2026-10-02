@@ -1,0 +1,109 @@
+.wrapper {
+  position: relative;
+  width: 220px;
+  height: 44px;
+}
+
+.trigger {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-08);
+  border: 1.5px solid transparent;
+  color: var(--text-primary);
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-semibold);
+  cursor: pointer;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.trigger:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.trigger[data-open="true"] {
+  border-color: rgba(59, 130, 246, 0.7);
+}
+
+.value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chevron {
+  width: 10px;
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 8px;
+  transition: transform 120ms ease;
+}
+
+.chevron[data-open="true"] {
+  transform: rotate(180deg);
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  z-index: 20;
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-height: 260px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  border-radius: var(--radius-lg);
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+  border: 1px solid var(--card-glass-border);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.menu::-webkit-scrollbar {
+  display: none;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.option[data-selected="true"] {
+  background: var(--nav-active-bg);
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+}
+
+.check {
+  width: 12px;
+  height: auto;
+  flex-shrink: 0;
+  margin-left: 12px;
+}

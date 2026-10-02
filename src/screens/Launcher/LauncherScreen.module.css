@@ -1,0 +1,48 @@
+.eyebrow {
+  font-family: var(--font-family);
+  font-size: var(--fs-nav);
+  font-weight: var(--fw-semibold);
+  color: var(--color-blue-400);
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.heroTitle {
+  font-family: var(--font-family);
+  font-size: var(--fs-display);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.heroSubtitle {
+  font-family: var(--font-family);
+  font-size: var(--fs-subtitle);
+  font-weight: var(--fw-regular);
+  color: var(--text-muted-70);
+  white-space: nowrap;
+}
+
+.statusGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.status {
+  font-family: var(--font-family);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-60);
+  white-space: nowrap;
+}
+
+.statusDetail {
+  font-family: var(--font-family);
+  font-size: var(--fs-label);
+  font-weight: var(--fw-regular);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}

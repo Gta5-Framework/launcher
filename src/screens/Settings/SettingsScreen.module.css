@@ -1,0 +1,116 @@
+.title {
+  font-family: var(--font-family);
+  font-size: var(--fs-heading-1);
+  font-weight: var(--fw-bold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.subtitle {
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-2xl);
+  background: var(--card-glass-bg);
+  border: 1px solid var(--card-glass-border);
+  backdrop-filter: blur(var(--blur-glass));
+  -webkit-backdrop-filter: blur(var(--blur-glass));
+}
+
+.eyebrow {
+  display: block;
+  margin-bottom: 64px;
+  font-family: var(--font-family);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-semibold);
+  color: var(--color-blue-400);
+  letter-spacing: var(--label-tracking);
+  text-transform: uppercase;
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 22px 0;
+}
+
+.row[data-divider="true"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.rowText {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.rowTitle {
+  font-family: var(--font-family);
+  font-size: 17px;
+  font-weight: var(--fw-semibold);
+  color: var(--text-primary);
+  white-space: nowrap;
+}
+
+.rowDescription {
+  font-family: var(--font-family);
+  font-size: var(--fs-caption);
+  font-weight: var(--fw-regular);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}
+
+.rowControl {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.rowButton {
+  width: 130px;
+  height: 44px;
+}
+
+.footer {
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.version {
+  font-family: var(--font-family);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-medium);
+  color: var(--text-muted-50);
+  white-space: nowrap;
+}
+
+.footerButton {
+  width: 240px;
+  height: 48px;
+}
